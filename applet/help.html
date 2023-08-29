@@ -1,0 +1,478 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+
+<HTML>
+
+<HEAD>
+<TITLE>User's Manual</TITLE>
+<META NAME="GENERATOR" CONTENT="Arachnophilia 3.9">
+<META NAME="FORMATTER" CONTENT="Arachnophilia 3.9">
+</HEAD>
+
+<BODY BACKGROUND="" BGCOLOR="#ffffff" TEXT="#000000" LINK="#ff0000" VLINK="##d80000" ALINK="#0000ff">
+
+<TABLE WIDTH="800" BORDER="0">
+<TR ALIGN=LEFT>
+
+<H1><B><CENTER>Applet User's Manual</CENTER></B></H1>
+
+<TABLE  width="800" border="5" cellspacing="5" cellpadding="2"  ALIGN=CENTER>
+      <TR ALIGN=LEFT> <H2><B>Contents</B></H2>
+	</TR>
+	<TR >
+		<!-- Row 1 Column 1 -->
+		<TD ALIGN=LEFT>
+			<UL type="default">
+				<LI> <A HREF="#File Menu"><U>File Menu</U></A>
+		            <UL type="circle">
+				       <LI>   <A HREF="#Clear"><I>Clearing the Canvas</I></A>
+			   	       <LI>   <A HREF="#Exit"><I>Exiting the Applet</I></A>
+			      </UL>
+
+				<LI> <A HREF="#Add Menu"><U>Add Menu</U></A>
+		            <UL type="circle">
+				       <LI>   <A HREF="#Adding Particles"><I>Add a Positive Particle</I></A>
+			   	       <LI>   <A HREF="#Adding Particles"><I>Add a Negative Particle</I></A>
+      		      </UL>
+
+				<LI> <A HREF="#Compute Menu"><U>Compute Menu</U></A>
+			      <UL type="circle">
+				      <LI>   <A HREF="#Locus Item"><I>Finding an Equipotential Surface (Locus)</I></A>
+			   	      <LI>   <A HREF="#Point Item"><I>Finding a Point With a Given Potential</I></A>
+		   		      <LI>   <A HREF="#Potential Item"><I>Finding the Potential at a Point</I></A>
+		   	      	<LI>   <A HREF="#Display Locus"><I>Displaying Locus Points</I></A>
+			      </UL>
+
+			      <LI> <A HREF="#Options Menu"><U>Options Menu</U></A>
+		            <UL type="circle">
+				       <LI>   <A HREF="#Surface Color"><I>Changing the Locus Color</I></A>
+   	      			 <LI>   <A HREF="#Particle Color"><I>Changing Particle Colors</I></A>
+			   	       <LI>   <A HREF="#Field Size"><I>Configuring Field Dimensions</I></A>
+			   	       <LI>   <A HREF="#Axis"><I>Configuring X-Y Axis</I></A>
+			   	       <LI>   <A HREF="#Epsilon"><I>Increasing or Decreasing Margin of Error (Epsilon)</I></A>
+			       </UL>
+
+				<LI> <A HREF="#Help Menu"><U>Help Menu</U></A>
+			      <UL type="circle">
+				       <LI>   <A HREF="#About"><I>About the Applet</I></A>
+			      </UL>
+
+			</UL>
+		</TD>
+
+		<!-- Row 1 Column 2 -->
+		<TD >
+			<UL type="default">
+				<LI> <A HREF="#Toolbar"><U>Toolbar</U></A>
+			      <UL type="circle">
+				      <LI>   <A HREF="#Add Particle"><I>Add a Positive Particle to the Field</I></A>
+				      <LI>   <A HREF="#Add Particle"><I>Add a Negative Particle to the Field</I></A>
+			   	      <LI>   <A HREF="#Point Button"><I>Finding a Point With a Given Potential</I></A>
+				      <LI>   <A HREF="#Locus Button"><I>Finding an Equipotential Surface (Locus)</I></A>
+		   		      <LI>   <A HREF="#Potential Button"><I>Finding the Potential at a Point</I></A>
+			      </UL>				
+			</UL>	
+
+			<UL type="default">
+				<LI> <A HREF="#Particle Menu"><U>Particle Menu (Popup Menu)</U></A>
+			      <UL type="circle">
+				      <LI>   <A HREF="#Move"><I>Changing the Location of a Particle</I></A>
+			   	      <LI>   <A HREF="#Charge"><I>Changing the Charge of a Particle</I></A>
+				      <LI>   <A HREF="#Radius"><I>Changing the Size of a Particle</I></A>
+			   	      <LI>   <A HREF="#Color"><I>Changing the Colors of a Particle</I></A>
+		   		      <LI>   <A HREF="#Remove"><I>Removing a Particle from the Field</I></A>
+			      </UL>				
+			</UL>
+
+
+			<UL type="default">
+				<LI> <A HREF="#Key"><U>Key Functions</U></A>
+			      <UL type="circle">
+				      <LI>   <A HREF="#Plus"><I>Zoom In</I></A>
+			   	      <LI>   <A HREF="#Minus"><I>Zoom Out</I></A>
+			      </UL>				
+			</UL>
+
+			<UL type="default">
+				<LI> <A HREF="#Status"><U>Status Bar</U></A>
+			      </UL>				
+			</UL>
+
+			<UL type="default">
+				<LI> <A HREF="#Point"><U>Point View</U></A>
+			      </UL>				
+			</UL>
+
+		</TD>
+	</TR>
+      </TABLE>
+
+<!----------------------------------------------------------------------- File Menu Documentation -------------------------------------------------------------------->
+<BR>
+<BR>
+<BR>
+<BR>
+
+<TABLE WIDTH="750" BORDER="0" ALIGN=LEFT>
+<TR>
+<TD  WIDTH="750">
+
+<HR WIDTH="100%" ALIGN=CENTER>
+<A NAME="File Menu"><H2><B>File Menu</B></H2></A>
+<P>The File menu provides the user with a way to clear the current screen.  It also allows the user to exit the applet.
+
+<IMG SRC="../pictures/menu/filemenu.jpg" ALT="">
+
+<A NAME="Clear"><H3><FONT SIZE="+1">Clear</FONT></H3></A>
+<P>Clicking on the Clear item removes any loci and particles from the canvas. This allows the user to start 
+ over in a new field with no particles or loci.
+</P>
+
+<A NAME="Exit"><H3><FONT SIZE="+1">Exit</FONT></H3></A>
+<P>Selecting the Exit menu item stops the execution of the applet and exits the applet.  This can also be accomplished by clicking the X in the top right hand corner of the applet.</P>
+
+
+
+<!-- ------------------------------------------   ADD MENU --------------------------------------------------- -->
+<BR>
+<BR>
+<HR WIDTH="100%" ALIGN=CENTER>
+
+<A NAME="Add Menu"><H2><B>Add Menu</B></H2></A>
+<P>The Add menu provides the user with a way to add particles to the canvas. 
+The user can add both negatively and positively charged particles to the field. 
+By using the Add menu, the user is able to specify the exact location of the particle in the field, along with the
+radius and the charge of the particle.
+</P>
+
+<IMG SRC="../pictures/menu/addMenu.jpg" ALT="">
+
+<A NAME="Adding Particles"><H3><FONT SIZE="+1">Adding Particles</FONT></H3></A>
+<P>Selecting the Positive or Negative Particle item under the Add menu brings up a dialog to configure a particle's charge, radius, and position.  Clicking the Positive or Negative Particle option under the menu brings up an option dialog (see below) with a default charge of positive or negative, respectively.  Selecting OK on the dialog places the particle with the entered attributes (radius and charge) at the entered position.  If a positive particle is selected and a negative charge is given then the colors of the particle will change to the negative default color, and vice versa.  Also, any loci already existing are recomputed and redrawn, taking into account the particle addition.  Closing the window simply does not add the given particle to the field.										
+</P>
+
+<IMG SRC="../pictures/dialog/fullParticle.jpg" ALT="">
+
+<BR>
+<BR>
+<A HREF="#Add Particle"><I>See Also Toolbar -- Add Particle </I></A>
+
+
+
+<!-- ---------------------------------------COMPUTE MENU----------------------------------------------------- -->
+
+<BR>
+<BR>
+<HR WIDTH="100%" ALIGN=CENTER>
+
+<A NAME="Compute Menu"><H2><B>Compute Menu</B></H2></A>
+<P>The Compute menu provides the user with a way to find the potential at a given point or find a point with a given potential.  It also has options for finding a locus of points with the same potential and displaying information about an equipotential surface and the points it contains.  If no particles are placed on the field, then the potential at a point, the point with a given potential, and the equipotential surfaces cannot be found. An error message will appear.
+</P>
+
+<IMG SRC="../pictures/menu/computeMenu.jpg" ALT="">
+
+<A NAME="Locus Item"><H3><FONT SIZE="+1">Finding Equipotential Surfaces</FONT></H3></A>
+<P>Selecting the Locus item from the Compute menu brings up a dialog that allows the user to specify the point at which to find the equipotential surface.  After entering in the desired location for the locus to be found, clicking OK causes a locus with the same potential as the given initial point (point entered) to be computed and drawn. Closing the window brings the user back to the main applet window without finding the locus.
+</P>
+
+<IMG SRC="../pictures/dialog/locus.jpg" ALT="">
+<BR>
+<BR>
+<A HREF="#Locus Button"><I>See Also Toolbar -- Finding Equipotential Surfaces </I></A>
+
+<BR>
+<BR>
+<BR>
+<A NAME="Point Item"><H3><FONT SIZE="+1">Finding a Point With a Given Potential</FONT></H3></A>
+<P>Selecting the Point option brings up a dialog (below on the left) to enter in the potential the user wishes to find.  It also has a place to specify where to start searching for a point with the given potential.  Selecting OK begins the search.  If a point with the entered potential is found, allowing a margin of error (Epsilon), then a label for the point and a label for the potential are drawn on the canvas. If no point is found with the given potential in the area specified, a response dialog (below on the right) pops up asking the user if he wishes to perform another search.  Selecting YES brings up the previous dialog (below on the left).  Clicking NO or closing the window returns the user to the main applet window.</P>
+
+<IMG SRC="../pictures/dialog/point.jpg" ALT="">
+
+
+<BR>
+<BR>
+<BR>
+<A NAME="Potential Item"><H3><FONT SIZE="+1">Finding the Potential at a Point</FONT></H3></A>
+<P>Selecting the Potential option brings up a dialog (below) to enter the point at which the user wants the potential to be found.  If OK is selected, then the potential at the entered point is found, and a label for the point and a label for the potential are drawn on the canvas.  If the window is closed, then the user returns to the main applet window with no potential being found at the specified point.</P>
+
+<IMG SRC="../pictures/dialog/potential.jpg" ALT="">
+
+<BR>
+<BR>
+<A HREF="#Potential Button"><I>See Also Toolbar -- Finding Potential at a Point </I></A>
+
+<BR>
+<BR>
+<BR>
+<A NAME="Display Locus"><H3><FONT SIZE="+1">Viewing Points of Equipontential Surface (Display Locus Points)</FONT></H3></A>
+<P>Clicking on the Display Locus option allows the user to display information about a locus and the point contained in the equipotential surface.  After selecting this option, the user simply clicks the initial point of the locus to be displayed--click to the left of the point label of the locus (see below for example). Locus information includes the number of points, the potential of the points, and the initial point found with the specified potential.  See below for an example of the locus display.</P>
+
+<IMG SRC="../pictures/dialog/displayLocus.jpg" ALT="">
+
+<BR>
+<BR>
+
+
+<!-- ---------------------------------------OPTIONS MENU----------------------------------------------------- -->
+
+<BR>
+<BR>
+<HR WIDTH="100%" ALIGN=CENTER>
+
+<A NAME="Options Menu"><H2><B>Options Menu</B></H2></A>
+<P>The Options menu allows the user to change characteristics of the applet.  The user is able to change the colors of the particles and equipotential surfaces.  The ability to set the window (field) to any desired width or height is also given to the user.  The user is able to turn the axis on or off (make the axis visible or invisible) and set the color of the axis.  The ability to control the margin of error (Epsilon) used in finding a point with a given potential is also found in the Options menu.
+</P>
+
+<IMG SRC="../pictures/menu/optionsMenu.jpg" ALT="">
+
+<A NAME="Surface Color"><H3><FONT SIZE="+1">Changing the Color of Equipotential Surfaces (Change Locus Color)</FONT></H3></A>
+<P>Selecting the Surface Color item from the Options menu brings up a color selection dialog (see below) that allows the user to chose the color for the equipotential surfaces.  After selecting the desired color, clicking APPLY sets the color of all the created loci to the new locus color.  All surfaces created after this change will have the chosen color.  Closing the dialog allows the loci to retain their current color, and the user is returned to the main applet window.
+</P>
+
+<IMG SRC="../pictures/dialog/surfaceColor.jpg" ALT="">
+
+<BR>
+<BR>
+<BR>
+<A NAME="Particle Color"><H3><FONT SIZE="+1">Changing the Color of Particles</FONT></H3></A>
+<P>Selecting the Negative Color or Positive Color item from the Options menu brings up a color selection dialog that allows the user to choose the primary and secondary colors for  negative or positive particles, respectively.  After selecting the color for the positive or negative particle, clicking OK makes any new particles added to the field (canvas)  have the colors selected.  Selecting APPLY sets the colors of all particles with the default colors (Blue and Yellow for positive particles and Red and Orange for negative particles until changed by the color choice) to the new color values.  Also any other particles added to the field will have the chosen colors.  Closing the window simply retains the defaults for the positive or negative particles and any existing particles keep their current colors. An example of the positive particle color dialog is shown below.
+</P>
+
+<IMG SRC="../pictures/dialog/particleColor.jpg" ALT="">
+
+<BR>
+<BR>
+<A HREF="#Color"><I>See Also Particle Menu -- Changing a Particle's Color</I></A>
+
+<BR>
+<BR>
+<BR>
+<A NAME="Field Size"><H3><FONT SIZE="+1">Changing the Size of the Field</FONT></H3></A>
+<P>Selecting the Field Width or Field Height option from the Options menu allows the user to specify the width or height of the field (or canvas window), respectively.  After entering the new maximum and minimum value in the dialog box (see below) for the field width or height, selecting OK  applies the new dimensions to the field (or window).  Closing the dialog allows the field to keep its current width and height dimensions.  It is important to note that a change in the height causes a change in the width, and similarly a change in the width causes a change in the height.  This is so the width and height of the field coordinates stay in the same ratio as the width and height of the canvas.  The axis, particles, and loci move in accordance with the change in dimensions of the field.
+</P>
+
+<IMG SRC="../pictures/dialog/field.jpg" ALT="">
+<BR>
+<BR>
+<A HREF="#Key"><I>See Also Key Functions -- Zooming In and Zooming Out</I></A>
+
+<BR>
+<BR>
+<BR>
+<A NAME="Axis"><H3><FONT SIZE="+1">Configure X-Y Axis</FONT></H3></A>
+<P>Clicking on the Axis item in the Options menu (see below) allows the user to turn the axis off or on and to change the color of the axis.  Turning the axis off makes the axis invisible to the user.  Turning the axis on shows an x-y axis with the specified color.  After selecting the color of the axis, clicking OK changes the color of the axis to the chosen color (if the axis is turned on).  If the options dialog is closed, then the axis retains its properties.
+</P>
+
+<IMG SRC="../pictures/dialog/axis.jpg" ALT="">
+
+
+<BR>
+<BR>
+<BR>
+<A NAME="Epsilon"><H3><FONT SIZE="+1">Increasing or Decreasing Epsilon</FONT></H3></A>
+<P>Selecting the Epsilon item from the Options menu lets the user control the margin of error allowed when searching for a point with a given potential.  A dialog box (see below) asks the user for the new margin of error.  After entering in the new value for Epsilon, selecting OK sets the new margin of error.  Closing the dialog box without selecting OK does not change the value of Epsilon. The old value is kept.
+</P>
+
+<IMG SRC="../pictures/dialog/epsilon.jpg" ALT="">
+
+
+<!-- ---------------------------------------Help MENU----------------------------------------------------- -->
+
+<BR>
+<BR>
+<HR WIDTH="100%" ALIGN=CENTER>
+
+<A NAME="Help Menu"><H2><B>Help Menu</B></H2></A>
+<P>The Help menu provides an About item which displays a dialog giving some information about the applet.
+</P>
+
+<IMG SRC="../pictures/menu/helpMenu.jpg" ALT="">
+
+<A NAME="About"><H3><FONT SIZE="+1">About the Applet</FONT></H3></A>
+<P>Selecting the About item from the Help menu displays a dialog yielding some applet information.
+</P>
+
+<IMG SRC="../pictures/dialog/about.jpg" ALT="">
+
+
+<!-- ---------------------------------------TOOLBAR----------------------------------------------------- -->
+
+<BR>
+<BR>
+<HR WIDTH="100%" ALIGN=CENTER>
+
+<A NAME="Toolbar"><H2><B>Toolbar</B></H2></A>
+<P>The Toolbar gives the user buttons to add a positive or negative particle, find a point with a given potential, compute the potential at a point, or find an equipotential surface.
+</P>
+
+<IMG SRC="../pictures/button/toolbar.jpg" ALT="">
+
+<A NAME="Add Particle"><H3><FONT SIZE="+1">Adding Particles</FONT></H3></A>
+<P>The top two buttons of the Toolbar are used to add a positive or negative particle.  The button to add a positive particle is shown below on the left, and the button to add a Negative particle is shown below in the middle.  The user simply has to click the button and then click where on the field they would like the particle to be placed.  A dialog box (below on right) then appears asking the user for the radius and charge of the particle.  After the values are entered, if the OK option is selected, the particle with the given charge and radius is added at the point clicked on.  If a positive particle is selected and a negative charge is given, then the colors of the particle will change to the negative default color, and vice versa.  Also, any loci already existing are recomputed and redrawn with the particle addition.  If the dialog box is closed, the particle is not added to the field, and the user is returned to the main applet window.
+</P>
+
+<IMG SRC="../pictures/button/particle.jpg" ALT="">
+<BR>
+<BR>
+<A HREF="#Adding Particles"><I>See Also Add Menu -- Adding Particles </I></A>
+
+<BR>
+<BR>
+<BR>
+<A NAME="Point Button"><H3><FONT SIZE="+1">Finding a Point With a Given Potential</FONT></H3></A>
+The button below is used to find a point with a given potential.  An error message appears if there are no particles on the field when this button is selected.
+<BR>
+<IMG SRC="../pictures/button/pointButton.jpg" ALT="">
+<BR>
+<A HREF="#Point Item"><I>See Compute Menu for Details -- Find a Point With a Given Potential </I></A>
+
+
+<BR>
+<BR>
+<BR>
+<A NAME="Locus Button"><H3><FONT SIZE="+1">Finding Equipotential Surfaces</FONT></H3></A>
+<P>Selecting the Locus button on the Toolbar allows the user to find an equipotential surface in the specified field.  The user then clicks on the location where the desired locus is to be found.  If there is a potential previously computed at that point, the locus is found around the existing point (see below). If this is not the case, a locus is found, and a label for the selected point is displayed with the potential for the locus.  If a locus already exists with this point as its initial point (point displayed on canvas), then no locus will be computed.  It is important to note that if there are no particles in the particle field, then the locus will not be computed. An error message will be displayed.
+</P>
+
+<IMG SRC="../pictures/button/locusButton.jpg" ALT="">
+<BR>
+<BR>
+<A HREF="#Locus Item"><I>See Also Compute Menu -- Finding Equipotential Surfaces </I></A>
+
+<BR>
+<BR>
+<BR>
+<A NAME="Potential Button"><H3><FONT SIZE="+1">Finding the Potential at a Point</FONT></H3></A>
+<P>Selecting the Potential option allows the user to click on the point (or points) at which the potential is to be found.  Clicking on any point on the field (or canvas) computes the potential at the point and draws this potential, along with the point selected, on the canvas.</P>
+
+<IMG SRC="../pictures/button/potentialButton.jpg" ALT="">
+
+<BR>
+<BR>
+<A HREF="#Potential Item"><I>See Also Compute Menu -- Finding Potential at a Point </I></A>
+
+
+<BR>
+<BR>
+
+
+
+<!-- ---------------------------------------Particle MENU----------------------------------------------------- -->
+
+<BR>
+<BR>
+<HR WIDTH="100%" ALIGN=CENTER>
+
+<A NAME="Particle Menu"><H2><B>Particle Menu</B></H2></A>
+<P>The Particle menu provides the user a way of changing characteristics of a particle.  The popup menu (see below) comes up when the particle is right-clicked. The menu allows the user to move the particle, change its colors, change the radius or charge of a particle, or remove a particle from the canvas (or field).
+</P>
+
+<IMG SRC="../pictures/popup/particleMenu.jpg" ALT="">
+
+<A NAME="Move"><H3><FONT SIZE="+1">Changing the Location of a Particle</FONT></H3></A>
+<P>Selecting the Move option from the Particle popup menu brings up a dialog (see below) to change the location of the particle.  The particle's current X and Y location are given in the dialog by default.  Selecting OK after entering the new location of the particle moves it to the desired location.  The existing loci are then recomputed and redrawn to account for the change in particle position.  Closing the dialog leaves the particle at its current position.
+</P>
+
+<IMG SRC="../pictures/popup/move.jpg" ALT="">
+
+<BR>
+<BR>
+<BR>
+<A NAME="Charge"><H3><FONT SIZE="+1">Changing the Charge of a Particle</FONT></H3></A>
+<P>The charge of a particle can be changed by selecting the Charge option of the Particle menu.  When this option is selected, an option dialog pops up (see below), displaying the particle's current charge.  If the OK option is selected, the particle's charge is changed to the charge entered by the user.  If the particle is using the default colors for a positive particle and this charge is changed to a negative charge, then the colors of the particle are changed to the default negative particle colors, and vice versa.  The existing loci are then recomputed to reflect the change in the particle's charge.  Closing the options dialog returns the user to the main applet window without changing the charge of the particle.
+</P>
+
+<IMG SRC="../pictures/popup/charge.jpg" ALT="">
+
+<BR>
+<BR>
+<BR>
+<A NAME="Radius"><H3><FONT SIZE="+1">Changing the Size of a Particle</FONT></H3></A>
+<P>Selecting the Radius option from the popup menu allows the the user to change the size of the particle. An option dialog (see below) is displayed with the particle's current radius.  After entering in the new radius for the particle, selecting OK changes the radius (size) of the particle.  If the dialog is closed, then the particle retains its original radius.
+</P>
+
+<IMG SRC="../pictures/popup/radius.jpg" ALT="">
+
+
+<BR>
+<BR>
+<BR>
+<A NAME="Color"><H3><FONT SIZE="+1">Changing a Particle's Colors</FONT></H3></A>
+<P>Selecting the Color option from the popup menu allows the user to change the colors of a particular particle without changing any of the defaults for a positive or negative particle.  A dialog is displayed which allows the user to select the colors of the particle.  Clicking OK in the dialog will change the colors of the particle to the selected colors.  Closing the dialog does not change the particle's colors; the original values are retained.
+</P>
+
+<IMG SRC="../pictures/popup/color.jpg" ALT="">
+<BR>
+<BR>
+<A HREF="#Particle Color"><I>See Also Options Menu -- Changing the Color of Particles </I></A>
+
+<BR>
+<BR>
+<BR>
+<A NAME="Remove"><H3><FONT SIZE="+1">Removing a Particle from a Field</FONT></H3></A>
+<P>The Remove option allows the user to remove the selected particle (the particle for which the popup menu is shown on the field).  Selecting this option removes the particle from the canvas, and the existing loci are recomputed to reflect the change in the field.  If there is only one particle on a canvas and this particle is removed, then all loci are also removed from the canvas.  (Loci cannot be computed or drawn in a field with no particles.)
+</P>
+
+
+<!-- --------------------------------------------------------------------Key Functions---------------------------------------------------------- -->
+
+<BR>
+<BR>
+<BR>
+<HR WIDTH="100%" ALIGN=CENTER>
+
+<A NAME="Key"><H2><B>Key Functions</B></H2></A>
+<P>The plus (+) and minus (-) keys allow the user to quickly resize the field.  The plus key (+) zooms in and the minus key (-) zooms out.  The zoom in and zoom out functionality are used to resize the field in small increments.  Whenever a significant change to the width or height of the field is desired, the Field Width or Field Height option should be used.
+</P>
+
+<BR>
+<BR>
+<BR>
+<A NAME="Plus"><H3><FONT SIZE="+1">Zooming In</FONT></H3></A>
+<P>The plus key (+) allows the user to zoom in on the field; it decreases the viewable dimensions of the field.  
+</P>
+
+<BR>
+<A HREF="#Field Size"><I>See Also Options Menu -- Changing the Size of the Field</I></A>
+
+<BR>
+<BR>
+<BR>
+<A NAME="Minus"><H3><FONT SIZE="+1">Zooming Out</FONT></H3></A>
+<P>The minus key (-) allows the user to zoom out; it increases the viewable dimensions of the field.  
+</P>
+
+<BR>
+<A HREF="#Field Size"><I>See Also Options Menu -- Changing the Size of the Field</I></A>
+
+
+<!-- ---------------------------------------------------POINT VIEW and STATUS BAR ----------------------------------------------- -->
+
+
+<BR>
+<BR>
+<BR>
+<HR WIDTH="100%" ALIGN=CENTER>
+<A NAME="Status"><H2><B>Status Bar</B></H2></A>
+<P>The Status bar (see below) on the bottom left-hand corner of the applet relays the status of the applet to the user; it tells the user what action is currently taking place (adding a particle, finding a locus, recomputing the existing loci, etc.). 
+</P>
+
+<IMG SRC="../pictures/interface/status.jpg" ALT="">
+
+
+<BR>
+<BR>
+<BR>
+<HR WIDTH="100%" ALIGN=CENTER>
+<A NAME="Point"><H2><B>Point View</B></H2></A>
+<P>A textbox on the bottom right hand corner of the applet (see below) displays the location of the mouse cursor in the given field.  The location is shown as a point (x,y). 
+</P>
+
+<IMG SRC="../pictures/interface/point.jpg" ALT="">
+
+</TR>
+</TABLE>
+</TR>
+</TABLE>
+</BODY>
+
+</HTML>
